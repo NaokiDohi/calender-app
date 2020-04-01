@@ -1,19 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
-import { Provider } from "react-redux";
-import { createStore } from "redux";
-
 import CalendarBoard from "./components/CalendarBoard";
 
-import rootReducer from "./redux/rootReducer";
-
-const store = createStore(rootReducer);
-
 const App = () => (
-  <Provider store={store}>
+  <div>
     <CalendarBoard />
-  </Provider>
+  </div>
 );
 
 ReactDOM.render(<App />, document.getElementById("root"));
