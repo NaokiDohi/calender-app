@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-import { count } from "./count/reducer";
+import { count } from "./count/reducer";//action_typeで分岐させる関数countを呼び出す。
 
 //redux のcreateStoreというメソッドを使って store を作成します。
 //これの引き数には全ての reducer を渡す必要があります。
