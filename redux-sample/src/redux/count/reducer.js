@@ -6,7 +6,7 @@ const initState = 0;
 export const count = (state = initState, { type, payload }) => {
   switch (type) {
     case INCREMENT:
-      return state + payload;
+      return state + payload;//直接変更せずに、新しいstateを返している点です
     case DECREMENT:
       return state - payload;
     default:
