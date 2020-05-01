@@ -7,7 +7,7 @@ import { INCREMENT, DECREMENT } from "./constants";
 
 export const increment = payload => ({
   type: INCREMENT,
-  payload
+  payload "アクションの実行に必要な任意のデータ"
 });
 
 export const decrement = payload => ({
